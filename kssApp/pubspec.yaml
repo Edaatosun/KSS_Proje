@@ -1,0 +1,85 @@
+name: project_kss
+description: "Kanuni Sultan Süleyman Eğitim ve Araştırma Hastanesi için geliştirmekte olduğumuz mobil uygulama."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_local_notifications:
+  image_picker:
+  google_mlkit_text_recognition:
+  timezone:
+  sqflite:
+  path_provider:
+  path:
+  intl:
+  mysql1:
+  flutter_dotenv:
+  http:
+  url_launcher:
+  curved_navigation_bar:
+  google_maps_flutter:
+  google_fonts:
+  #bt things
+  # flutter_blue:
+  flutter_blue_plus:
+  get:
+  permission_handler:
+  #for the brochures and stuff
+  rxdart:
+  shared_preferences:
+  #snake game için eklenenler:
+  cupertino_icons: ^1.0.2
+  animated_text_kit: ^4.2.1
+  #card game için eklenenler:
+  flip_card: ^0.7.0
+  flutter_riverpod: ^2.4.4
+  riverpod_annotation: ^2.2.1
+  uuid: ^4.1.0
+  #tetris için eklenenler:
+  collection: ^1.16.0
+  provider: ^6.0.4
+  # added after combining all parts of the app
+  flutter_launcher_icons:
+  # push notifications
+  # firebase_core: # deprecated and removed
+  firebase_messaging:
+  firebase_database:
+
+flutter_icons:
+  image_path: "assets/images/bayes.png" 
+  android: true
+  ios: true
+  remove_alpha_ios: true # icons with alpha channel are now allowed in the AppStore, set this to remove it.
+
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/icons/
+    - assets/images/memory_game/
+    - assets/images/puzzle_game/
+    - assets/images/others/
+    - assets/images/snake_game/ # Ekleme yapıldı, ayrıca snake_game asset'e eklendi.
+    - assets/images/card_game/ # Ekleme yapıldı, ayrıca card_game asset'e eklendi.
+    - assets/images/brochure_screen/ # Ekleme yapıldı, ayrıca brochure_screen asset'e eklendi.
+    - assets/images/policlinic_icons/
+    - .env
+  fonts:
+    - family: Avenir
+      fonts:
+        - asset: assets/fonts/avenir_ff/AvenirLTStd-Black.otf
+        - asset: assets/fonts/avenir_ff/AvenirLTStd-Book.otf
+        - asset: assets/fonts/avenir_ff/AvenirLTStd-Roman.otf
+    
